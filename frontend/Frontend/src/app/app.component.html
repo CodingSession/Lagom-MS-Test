@@ -1,0 +1,24 @@
+<div style="font-size: 2em">
+  <label>Java</label>
+  <button (click)="getJavaF()">Funktional</button>
+  <button (click)="getJavaR()">Reaktiv</button>
+  <button (click)="getJavaMW()">Moving Window</button>
+  <p>
+    Min: {{response.min}} , Max: {{response.max}} , Avg: {{response.avg}}
+  </p>
+</div>
+
+<div style="font-size: 2em">
+  <label>Scala</label>
+  <button (click)="getScala()">Funktional</button>
+  <p>
+    Min: {{response[0]}} , Max: {{response[1]}} , Avg: {{response[2]}}
+  </p>
+</div>
+
+<div style="font-size: 2em">
+  <label>Timer</label>
+  <p>
+    {{time}} ms
+  </p>
+</div>
